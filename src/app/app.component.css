@@ -23,7 +23,7 @@ nav{
   bottom: 0;
   width: 60px;
   transition: all 0.3s linear;
-  opacity: 0.8;
+  opacity: 0.75;
   transition: 0.5s;
 
 }
@@ -75,10 +75,30 @@ nav li a{
 
 }
 
+.img-container {
+  bottom: 80px;
+  position: absolute;
+  right: 130px;
+  background-color: rgb(23, 42, 69);
+  transition: 0.5s;
+  border-radius: 200px;
+  overflow: hidden;
+  box-shadow: 10px 10px 80px 10px rgba(0, 0, 0, 0.2);
+}
+
+.img-container img {
+  /* transform: translateX(10px) translateY(-50px);  */
+height: 300px;
+}
+
+.img-container:hover {
+  background-color: #c49c67;
+
+}
 /* Connect */
 
 .connect-button {
-  background-color: rgb(23, 42, 69);;
+  background-color: rgb(23, 42, 69);
   position: absolute;
   top: 50px;
   right: 130px;
@@ -123,7 +143,7 @@ h1 {
   color: white;
   font-weight: 800;
   transform: translateY(10px) !important;
-  font-size: 60px;
+  font-size: 80px;
   font-family: SFPDH;
   line-height: 1;
 }
@@ -159,7 +179,7 @@ h1 span {
   line-height: 1.4;
   min-height: 135px;
   font-family: SFPDSB;
-  font-size: 50px;
+  font-size: 60px;
 }
 
 h4 {
