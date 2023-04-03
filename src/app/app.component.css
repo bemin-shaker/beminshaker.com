@@ -25,7 +25,6 @@ nav{
   transition: all 0.3s linear;
   opacity: 0.75;
   transition: 0.5s;
-
 }
 
 nav:hover {
@@ -67,6 +66,7 @@ nav li a{
   color: #c49c67;
 
 }
+
 .vl {
   border-left: 2px solid white;
   margin-top: 27px;
@@ -76,7 +76,7 @@ nav li a{
 }
 
 .img-container {
-  bottom: 80px;
+  bottom: 60px;
   position: absolute;
   right: 130px;
   background-color: rgb(23, 42, 69);
@@ -87,14 +87,15 @@ nav li a{
 }
 
 .img-container img {
-  /* transform: translateX(10px) translateY(-50px);  */
-height: 300px;
+  width: 23vw;
 }
 
 .img-container:hover {
   background-color: #c49c67;
 
 }
+
+
 /* Connect */
 
 .connect-button {
@@ -104,7 +105,7 @@ height: 300px;
   right: 130px;
   z-index: 100;
   padding: 8px 12px 8px 12px;
-  font-size: 20px;
+  font-size: 1.5vw;
   font-family: SFPTT;
   transition: 0.5s;
 }
@@ -123,12 +124,15 @@ height: 300px;
   padding-right: 10px;
   margin-right: 10px;
 }
+
+
 /* Jumbotron */
 
 .jumbotron {
   height: 100vh;
   color: white;
   display: flex;
+  flex-direction: row;
   align-items: center;
   text-align: left;
   background-color: #0a192f;
@@ -143,30 +147,19 @@ h1 {
   color: white;
   font-weight: 800;
   transform: translateY(10px) !important;
-  font-size: 80px;
+  font-size: 7vw;
   font-family: SFPDH;
   line-height: 1;
 }
 
 h5 {
   color: #c49c67;
-  font-size: 18px;
+  font-size: 1.5vw;
   font-weight: 100;
   font-family: Montserrat, sans-serif;
-}
-
-#hi-title {
   margin-left: 3px;
   font-family: Montserrat, sans-serif;
-  line-height: 1.4;
-}
-
-h1 span {
-  color: rgb(136, 146, 176);
-  text-decoration: none;
-  font-weight: 600;
-  font-size: 60px;
-  line-height: 0 !important;
+  line-height: 1.0;
 }
 
 .aspire a {
@@ -179,7 +172,7 @@ h1 span {
   line-height: 1.4;
   min-height: 135px;
   font-family: SFPDSB;
-  font-size: 60px;
+  font-size: 5vw;
 }
 
 h4 {
@@ -226,4 +219,72 @@ h2 {
   color: white;
   font-size: 14px;
   font-family: SFPTT;
+}
+
+@media (max-width: 425px) {
+  nav{
+    visibility: hidden;
+  }
+
+  .jumbotron {
+    padding-left: 20px;
+  }
+
+  h1 {
+    font-size: 10vw;
+  }
+
+  .img-container {
+    bottom: 40px;
+  }
+
+  .connect-button {
+    right: 20px;
+    top: 20px;
+    font-size: 3vw;
+  }
+
+  .img-container img {
+    width: 35vw;
+  }
+
+  h5 {
+    font-size: 2.5vw;
+    line-height: 0;
+  }
+}
+
+@media (min-width: 426px) and (max-width: 760px) {
+
+  nav{
+    visibility: hidden;
+  }
+
+  .jumbotron {
+    padding-left: 40px;
+  }
+
+  h1 {
+    font-size: 10vw;
+  }
+
+  .img-container {
+    bottom: 40px;
+    right: 40px;
+  }
+
+  .connect-button {
+    right: 40px;
+    top: 40px;
+    font-size: 2vw;
+  }
+
+  .img-container img {
+    width: 35vw;
+  }
+
+  h5 {
+    font-size: 2.5vw;
+    line-height: 0.5;
+  }
 }
